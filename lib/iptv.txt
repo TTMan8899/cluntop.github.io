@@ -4156,10 +4156,11 @@ CHC家庭影院,http://nas.hssvm.com:8888/udp/225.1.1.213:5002$LR•IPV4•18『
 欢乐剧场,http://39.134.65.175/PLTV/88888888/224/3221225682/1.m3u8$LR•IPV4•8『线路6』
 欢乐剧场,http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000005000266012/1.m3u8?channel-id=ystenlive&Contentid=1000000005000266012&livemode=1&stbId=lzz123$LR•IPV4•8『线路7』
 欢乐剧场,http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000050/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000050&livemode=1&stbId=lzz123$LR•IPV4•8『线路8』
-精品萌宠,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•4『线路1』
-精品萌宠,http://[2409:8087:74d9:21::6]:80/270000001128/9900000122/index.m3u8$LR•IPV6•4『线路2』
-精品萌宠,http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000006000032328/1.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=lzz123$LR•IPV4•4『线路3』
-精品萌宠,http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000067/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000067&livemode=1&stbId=lzz123$LR•IPV4•4『线路4』
+精品萌宠,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•5『线路1』
+精品萌宠,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•5『线路2』
+精品萌宠,http://[2409:8087:74d9:21::6]:80/270000001128/9900000122/index.m3u8$LR•IPV6•5『线路3』
+精品萌宠,http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000006000032328/1.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=lzz123$LR•IPV4•5『线路4』
+精品萌宠,http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000067/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000067&livemode=1&stbId=lzz123$LR•IPV4•5『线路5』
 超级综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8$LR•IPV6•8『线路1』
 超级综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8$LR•IPV6•8『线路2』
 超级综艺,http://[2409:8087:74d9:21::6]:80/270000001128/9900000019/index.m3u8$LR•IPV6•8『线路3』

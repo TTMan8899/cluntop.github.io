@@ -8299,13 +8299,15 @@ http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000005000266012/1.m3u8?c
 #EXTINF:-1 tvg-id="8" tvg-name="欢乐剧场" group-title="数字频道",欢乐剧场
 http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000050/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000050&livemode=1&stbId=lzz123$LR•IPV4•8『线路8』
 #EXTINF:-1 tvg-id="1" tvg-name="精品萌宠" group-title="数字频道",精品萌宠
-http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•4『线路1』
+http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•5『线路1』
 #EXTINF:-1 tvg-id="2" tvg-name="精品萌宠" group-title="数字频道",精品萌宠
-http://[2409:8087:74d9:21::6]:80/270000001128/9900000122/index.m3u8$LR•IPV6•4『线路2』
+http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8$LR•IPV6•5『线路2』
 #EXTINF:-1 tvg-id="3" tvg-name="精品萌宠" group-title="数字频道",精品萌宠
-http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000006000032328/1.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=lzz123$LR•IPV4•4『线路3』
+http://[2409:8087:74d9:21::6]:80/270000001128/9900000122/index.m3u8$LR•IPV6•5『线路3』
 #EXTINF:-1 tvg-id="4" tvg-name="精品萌宠" group-title="数字频道",精品萌宠
-http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000067/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000067&livemode=1&stbId=lzz123$LR•IPV4•4『线路4』
+http://tvgslb.hn.chinamobile.com:8089/000000001000//1000000006000032328/1.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=lzz123$LR•IPV4•5『线路4』
+#EXTINF:-1 tvg-id="5" tvg-name="精品萌宠" group-title="数字频道",精品萌宠
+http://tvgslb.hn.chinamobile.com:8089/000000001000//2000000003000000067/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000067&livemode=1&stbId=lzz123$LR•IPV4•5『线路5』
 #EXTINF:-1 tvg-id="1" tvg-name="超级综艺" group-title="数字频道",超级综艺
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8$LR•IPV6•8『线路1』
 #EXTINF:-1 tvg-id="2" tvg-name="超级综艺" group-title="数字频道",超级综艺
