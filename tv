@@ -21,10 +21,6 @@
 			"name": "摸鱼"
 		},
 		{
-			"url": "./fun.json",
-			"name": "18+"
-		},
-		{
 			"url": "./jsm.json",
 			"name": "PG"
 		}
