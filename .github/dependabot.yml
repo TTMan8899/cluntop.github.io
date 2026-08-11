@@ -9,9 +9,28 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      day: "monday"
+      # day: "monday"
       timezone: "Asia/Shanghai"
-      time: "09:00"
+      time: "07:00"
+    pull-request-branch-name:
+      separator: "-"
+      
+    groups:
+       all-actions:
+         patterns:
+           - "*"
+
+    open-pull-requests-limit: 10
+      
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+      # day: "monday"
+      timezone: "Asia/Shanghai"
+      time: "07:00"
+    pull-request-branch-name:
+      separator: "-"
     
     groups:
        all-actions:
@@ -20,14 +39,11 @@ updates:
 
     open-pull-requests-limit: 10
 
-    commit-message:
-      prefix: "ci"
-      prefix-development: "ci"
-      include: "scope"
+    # commit-message:
+      # prefix: "ci"
+      # prefix-development: "ci"
+      # include: "scope"
 
-    labels:
-      - "dependencies"
-      - "documentation"
-
-    pull-request-branch-name:
-      separator: "-"
+    # labels:
+      # - "dependencies"
+      # - "documentation"

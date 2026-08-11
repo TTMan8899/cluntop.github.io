@@ -3,6 +3,7 @@ name: Upstream Sync
 permissions:
   contents: write
   actions: write
+  pull-requests: write      # 'write' access to pull requests
 
 on:
   schedule:
@@ -42,7 +43,7 @@ jobs:
 
     steps:
       - name: Checkout Target Repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ env.TARGET_BRANCH }}
           repository: cluntop/tvbox
