@@ -55,6 +55,12 @@ class Spider(Spider):
     def manualVideoCheck(self):
         pass
 
+    def localProxy(self, param):
+        pass
+
+    def destroy(self):
+        pass
+
     def homeContent(self, filter):
         """获取首页内容和分类"""
         result = {}
@@ -478,7 +484,7 @@ class Spider(Spider):
                 link = self.host + link
             
             # 检查是否是特殊分区的链接
-            is_special_link = '/html/28k.html' in link or '/html/ar.html' in link
+            is_special_link = '/html/28k.html' in link or '/html/ar.html' in link or '/html/dcdc/' in link
             
             # 对于特殊分区，直接使用链接本身作为ID
             if is_special_link and category_id in self.special_categories:
@@ -581,7 +587,8 @@ class Spider(Spider):
             player_link_patterns = [
                 r'href="(/html/28k\.html[^"]*)"',
                 r'href="(/html/ar\.html[^"]*)"',
-                r'href="(/html/kkyd\.html[^"]*)"'
+                r'href="(/html/kkyd\.html[^"]*)"',
+                r'href="(/html/dcdc/[^"]*)"'
             ]
             
             player_links = []

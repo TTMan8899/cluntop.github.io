@@ -1,4 +1,5 @@
 import sys, re, requests
+from urllib.parse import quote
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 from base.spider import Spider
@@ -49,11 +50,15 @@ class Spider(Spider):
             ]
         return {'class': cats}
 
+    def homeVideoContent(self):
+        return self.postList(self.siteUrl, 1)
+
     def categoryContent(self, tid, pg, filter, extend):
         url = f"{self.siteUrl}/{tid}/{pg}/" if str(pg) != '1' else f"{self.siteUrl}/{tid}/"
         return self.postList(url, int(pg))
 
     def searchContent(self, key, quick, pg=1):
+        key = quote(key)
         url = f"{self.siteUrl}/search/{key}/{pg}/" if str(pg) != '1' else f"{self.siteUrl}/search/{key}/"
         return self.postList(url, int(pg))
 
@@ -63,25 +68,28 @@ class Spider(Spider):
         if r and r.ok:
             blocks = r.text.split('<div class="video-img-box')[1:]
             for block in blocks:
-                href_match = re.search(r'href=["\']([^"\']+/videos/[^"\']+)["\']', block)
-                if not href_match: continue
-                u = href_match.group(1)
+                try:
+                    href_match = re.search(r'href=["\']([^"\']+/videos/[^"\']+)["\']', block)
+                    if not href_match: continue
+                    u = href_match.group(1)
 
-                title_match = re.search(r'<h6 class="title"[^>]*>\s*<a[^>]*>(.*?)</a>', block, re.S)
-                t = re.sub(r'<[^>]+>', '', title_match.group(1)).strip() if title_match else "未知"
+                    title_match = re.search(r'<h6 class="title"[^>]*>\s*<a[^>]*>(.*?)</a>', block, re.S)
+                    t = re.sub(r'<[^>]+>', '', title_match.group(1)).strip() if title_match else "未知"
 
-                pic_match = re.search(r'data-src=["\']([^"\']+)["\']', block) or re.search(r'src=["\']([^"\']+)["\']', block)
-                p = pic_match.group(1) if pic_match else ""
+                    pic_match = re.search(r'data-src=["\']([^"\']+)["\']', block) or re.search(r'src=["\']([^"\']+)["\']', block)
+                    p = pic_match.group(1) if pic_match else ""
 
-                u = u if u.startswith("http") else f"{self.siteUrl}/{u.lstrip('/')}"
-                
-                l.append({
-                    'vod_id': f"{u}@@@{t}@@@{p}",
-                    'vod_name': t,
-                    'vod_pic': p,
-                    'vod_remarks': '1080P',
-                    'style': {"type": "rect", "ratio": 1.33}
-                })
+                    u = u if u.startswith("http") else f"{self.siteUrl}/{u.lstrip('/')}"
+                    
+                    l.append({
+                        'vod_id': f"{u}@@@{t}@@@{p}",
+                        'vod_name': t,
+                        'vod_pic': p,
+                        'vod_remarks': '1080P',
+                        'style': {"type": "rect", "ratio": 1.33}
+                    })
+                except Exception:
+                    continue
         return {'list': l, 'page': pg, 'pagecount': pg + 1 if len(l) else pg, 'limit': 24, 'total': 9999}
 
     def detailContent(self, ids):
@@ -106,7 +114,7 @@ class Spider(Spider):
             'vod_pic': pic,
             'type_name': '视频',
             'vod_play_from': 'Jable',
-            'vod_play_url': f"播放${m3u8_url}" if m3u8_url else f"播放${vid}"
+            'vod_play_url': f"播放${m3u8_url}" if m3u8_url else ""
         }
         return {'list': [vod]}
 
@@ -119,3 +127,12 @@ class Spider(Spider):
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             }
         }
+
+
+    def localProxy(self, param): pass
+
+    def isVideoFormat(self, url): return True
+
+    def manualVideoCheck(self): pass
+
+    def destroy(self): pass
