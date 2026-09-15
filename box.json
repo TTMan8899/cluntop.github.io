@@ -25,7 +25,7 @@
    "key": "金牌影院",
    "name": "金牌[js]",
    "type": 3,
-   "api": "./js/金牌影院.js"
+   "api": "./js/金牌影视.js"
   },
   {
    "key": "py_maple",
@@ -36,8 +36,41 @@
    "quickSearch": 1,
    "filterable": 1,
    "ext": {
-    "host": "https://www.cd-zj.com"
+    "sites": [
+     "https://www.zzztool.com",
+     "https://maihaolian.com",
+     "https://www.cd-zj.com"
+    ],
+    "sitesIndex": 0
    }
+  },
+  {
+   "key": "py_juzong",
+   "name": "剧踪[py]",
+   "type": 3,
+   "api": "./py/juzong.py",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "py_hongguo",
+   "name": "红果[py]",
+   "type": 3,
+   "api": "./py/hongguo.py",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "py_guazi",
+   "name": "瓜子[py]",
+   "type": 3,
+   "api": "./py/guazi.py",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": {}
   },
   {
    "key": "py_libvio",
@@ -117,16 +150,6 @@
    }
   },
   {
-   "key": "py_guazi",
-   "name": "瓜子影视[py]",
-   "type": 3,
-   "api": "./py/guazi.py",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": {}
-  },
-  {
    "key": "py_shanzha",
    "name": "山楂影视[py]",
    "type": 3,
@@ -190,6 +213,15 @@
    "changeable": 1
   },
   {
+   "key": "py_juok3",
+   "name": "剧OK[py]",
+   "type": 3,
+   "api": "./py/juok3.py",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
    "key": "1",
    "name": "--- 1 ---"
   },
@@ -199,13 +231,6 @@
    "type": 3,
    "api": "csp_XBPQ",
    "ext": "./js/s/小镇.json"
-  },
-  {
-   "key": "西瓜",
-   "name": "西瓜影视",
-   "type": 3,
-   "api": "csp_XBPQ",
-   "ext": "./js/s/西瓜.json"
   },
   {
    "key": "狐狸君",
@@ -1308,7 +1333,9 @@
    ]
   }
  ],
- "proxy": [],
+ "proxy": [
+  "userlocations.googleapis.com"
+ ],
  "hosts": [],
  "rules": [
   {
