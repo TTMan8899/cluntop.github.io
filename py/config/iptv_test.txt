@@ -825,6 +825,7 @@ MOMO TV,
 華視,
 東森新聞,
 中天綜合,
+耀才财经,
 
 央视台,#genre#
 CCTV-4K 高清,
@@ -6898,6 +6899,9 @@ Alkass SHOOF,
 Alkass Six,
 Alkass Two,
 Star Sports 1,
+Alkass Three,
+CazeTV (1080i),
+NFL Network,
 
 少儿,#genre#
 央视少儿,
@@ -7034,6 +7038,7 @@ TV Arbëria 3 Fëmijë,
 ЭлТР Билим Илим,
 FilmRise Anime,
 Nick HD+,
+Freeform,
 
 音乐,#genre#
 MTV Live,
@@ -7518,6 +7523,8 @@ Raj Pariwar,
 M Sign Media,
 Malabar News,
 Zee Malayalam News,
+Rada TV,
+MS NOW,
 
 财经,#genre#
 央视财经,
